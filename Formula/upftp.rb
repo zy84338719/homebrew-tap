@@ -11,7 +11,7 @@ class Upftp < Formula
   on_macos do
     on_intel do
       url "https://github.com/zy84338719/upftp/releases/download/v2.3.0/upftp_Darwin_x86_64.tar.gz"
-      sha256 "1e318c8156bc086a61fe1e8cef947a1148237b14c7b0217eeb206fec2b61a2fd"
+      sha256 "e54683f736d40fab666dfa9ec1c44259b98bac19c03263a5d6eaed622c6607c2"
 
       def install
         bin.install "upftp"
@@ -19,7 +19,7 @@ class Upftp < Formula
     end
     on_arm do
       url "https://github.com/zy84338719/upftp/releases/download/v2.3.0/upftp_Darwin_arm64.tar.gz"
-      sha256 "727fa1465902a698246e07ed0b897946e484eb78d5fbfd7f0dcdd5b8eea0bf77"
+      sha256 "1f64c58ede18f2aacd74ab8c6390d496c4a84038d20d1a165c64b915b0a89d2c"
 
       def install
         bin.install "upftp"
@@ -31,7 +31,7 @@ class Upftp < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/zy84338719/upftp/releases/download/v2.3.0/upftp_Linux_x86_64.tar.gz"
-        sha256 "82c6593ee5472cb0bb3044f4d8eb9beba54eff8bf9773904c7fa280df18ce682"
+        sha256 "28a5b5df0c3842f7f720f60f0c5e14b95d978c3b2ca6c4491967fb9192e2c9ba"
 
         def install
           bin.install "upftp"
@@ -41,7 +41,7 @@ class Upftp < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/zy84338719/upftp/releases/download/v2.3.0/upftp_Linux_arm64.tar.gz"
-        sha256 "65f113ae737809cdff695c34f8284d2c65a4b4ec161ed8d58d5d366d7a27205b"
+        sha256 "f8b4779931071aa4e9f7795460136d8c38c92a47433c2a285a2a44bfe98c4c7a"
 
         def install
           bin.install "upftp"

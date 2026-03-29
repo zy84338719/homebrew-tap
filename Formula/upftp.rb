@@ -5,21 +5,21 @@
 class Upftp < Formula
   desc "Modern cross-platform file sharing server"
   homepage "https://github.com/zy84338719/upftp"
-  version "2.3.6"
+  version "2.3.7"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/zy84338719/upftp/releases/download/v2.3.6/upftp_Darwin_x86_64.tar.gz"
-      sha256 "7d23c56a4b6a8e89363999e8f39a910134f69ceb42125d81d73d50d451273be8"
+      url "https://github.com/zy84338719/upftp/releases/download/v2.3.7/upftp_Darwin_x86_64.tar.gz"
+      sha256 "fd4bc412a978233bee18668863429b5aaa1e090579121efc50e0b39f54e5fb0b"
 
       def install
         bin.install "upftp"
       end
     end
     on_arm do
-      url "https://github.com/zy84338719/upftp/releases/download/v2.3.6/upftp_Darwin_arm64.tar.gz"
-      sha256 "043fec97c6ecfcbc8b8c106b9dd94eee092cd8cbd8f86183a66a2a8b9ab8399d"
+      url "https://github.com/zy84338719/upftp/releases/download/v2.3.7/upftp_Darwin_arm64.tar.gz"
+      sha256 "31baad20451f24c19b55dd1e988cc37cf1d8ad5314ea8a8c0f2c07353195cd18"
 
       def install
         bin.install "upftp"
@@ -30,8 +30,8 @@ class Upftp < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/zy84338719/upftp/releases/download/v2.3.6/upftp_Linux_x86_64.tar.gz"
-        sha256 "6e9fb9438d76fc5c92722c8207ec21841649d8b9fd7e14c7c5fa6ba91ae40ad1"
+        url "https://github.com/zy84338719/upftp/releases/download/v2.3.7/upftp_Linux_x86_64.tar.gz"
+        sha256 "fb85850299bf917fd7624040f21f4d3d134af89ec916571121aebfce6042dae0"
 
         def install
           bin.install "upftp"
@@ -40,8 +40,8 @@ class Upftp < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/zy84338719/upftp/releases/download/v2.3.6/upftp_Linux_arm64.tar.gz"
-        sha256 "e9dc3cb4880ac71315c6dabc5013ed2623f0f5ca7b46f8609b9e2621f18aa273"
+        url "https://github.com/zy84338719/upftp/releases/download/v2.3.7/upftp_Linux_arm64.tar.gz"
+        sha256 "d5e01696119af2040aa43fc82553687f9d6c01ebf1d4b0e0852dba4bd83c3bab"
 
         def install
           bin.install "upftp"

@@ -5,13 +5,13 @@
 class Upftp < Formula
   desc "Modern cross-platform file sharing server with HTTP and FTP support"
   homepage "https://github.com/zy84338719/upftp"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zy84338719/upftp/releases/download/v0.1.3/upftp_Darwin_x86_64.tar.gz"
-      sha256 "042a20c1892edffb723ea89a49fd61288f85059a615f8a45e5c5fde000025756"
+      url "https://github.com/zy84338719/upftp/releases/download/v0.1.4/upftp_Darwin_x86_64.tar.gz"
+      sha256 "038a66d9bedfaaa03c00ca4aa2e111807bf7e752ba11f7205047b03ce444b441"
 
       define_method(:install) do
         bin.install "upftp"
@@ -22,8 +22,8 @@ class Upftp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zy84338719/upftp/releases/download/v0.1.3/upftp_Darwin_arm64.tar.gz"
-      sha256 "8e63876a00101ea7c5ad8d7778a92bd2e5582f290e8cc67adb469611eea56d78"
+      url "https://github.com/zy84338719/upftp/releases/download/v0.1.4/upftp_Darwin_arm64.tar.gz"
+      sha256 "b11246df4068ac0ba94523be148517c00982eb9191f32a258f603b21232c4606"
 
       define_method(:install) do
         bin.install "upftp"
@@ -37,8 +37,8 @@ class Upftp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zy84338719/upftp/releases/download/v0.1.3/upftp_Linux_x86_64.tar.gz"
-      sha256 "33b5949137c864734784727e49bcca8f7a676e2582964e82be9bd9b81d2174ba"
+      url "https://github.com/zy84338719/upftp/releases/download/v0.1.4/upftp_Linux_x86_64.tar.gz"
+      sha256 "48f5f7fa51b137096b6e2bf273426846fa8ddd851727e13903c8ad186f5837dd"
       define_method(:install) do
         bin.install "upftp"
 
@@ -48,8 +48,8 @@ class Upftp < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zy84338719/upftp/releases/download/v0.1.3/upftp_Linux_arm64.tar.gz"
-      sha256 "831111d7534d137b6dc4d661168cb83c309933a519dd7a05c4b5268d7df6e05e"
+      url "https://github.com/zy84338719/upftp/releases/download/v0.1.4/upftp_Linux_arm64.tar.gz"
+      sha256 "066a3f2f554151534665ec4fe414741e3a5daf5d81bcb0e053fe44601a5b15f3"
       define_method(:install) do
         bin.install "upftp"
 
